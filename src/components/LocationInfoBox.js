@@ -1,8 +1,8 @@
 import React from 'react';
 
-const LocationInfoBox = ({info}) => {
+const LocationInfoBox = ({info, onClick}) => {
   return (
-    <div className="location-info">
+    <div className="location-info" onClick={onClick}>
       <h3>Event Location Info</h3>
       <ul>
         <li><strong>{info.title}</strong></li>
