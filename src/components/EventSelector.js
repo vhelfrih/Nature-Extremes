@@ -5,8 +5,6 @@ import RadioGroup from "@mui/material/RadioGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import FormControl from "@mui/material/FormControl";
 import FormLabel from "@mui/material/FormLabel";
-import {styles} from '@mui/material/styles';
-;
 
 const EventSelector = () => {
   const [value, setValue] = useState(null);
@@ -24,6 +22,7 @@ const EventSelector = () => {
         focused="true"
         sx={{
           display: 'inline',
+          letterSpacing: 2,
           fontWeight: 'bold',
           mt: 0.5,
           pt: 1.2,

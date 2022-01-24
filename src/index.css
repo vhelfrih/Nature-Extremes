@@ -44,6 +44,21 @@ body {
   color: firebrick;
 }
 
+.close-icon {
+  font-size: 1.3rem;
+  color: firebrick;
+}
+
+.location-info {
+  position: relative;
+}
+
+.info-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
 .loader {
   display: flex;
   flex-direction: column;
