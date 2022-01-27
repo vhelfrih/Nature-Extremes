@@ -25,7 +25,7 @@ body {
 
 .selector {
   display: inline-block;
-  top: 12rem;
+  top: 14rem;
   left: 20px;
   background-color: rgba(0,0,0,0.6);
   border-radius: 10px;
@@ -101,4 +101,10 @@ body {
 
 .location-info li a{
   color: aliceblue;
+}
+
+@media (max-width: 440px) {
+  .selector {
+    width: fit-content;
+  }
 }

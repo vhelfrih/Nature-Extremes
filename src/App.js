@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import EventSelector from "./components/EventSelector";
 import Header from "./components/Header";
 import Loader from "./components/Loader";
 import Map from "./components/Map";
@@ -19,14 +18,12 @@ function App() {
       setEventData(events);
       setLoading(false);
     };
-    
     fetchEvents();
   }, []);
 
   return (
     <div>
       <Header />
-      <EventSelector />
       { !loading ? <Map eventData={eventData} /> : <Loader /> }
     </div>
   );
