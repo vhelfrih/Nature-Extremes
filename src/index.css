@@ -6,7 +6,6 @@ body {
 }
 
 .header-container {
-
   display: flex;
 }
 
@@ -28,19 +27,31 @@ body {
   text-align: center;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;;
+}
+
 .selector {
-  top: 24rem;
+  top: 20rem;
   left: 20px;
+  display: flex;
+  height: fit-content;
   background-color: rgba(0,0,0,0.6);
   border-radius: 10px;
   color: white;
   z-index: 100;
+  position: absolute;
+  width: fit-content;
 }
+
 
 .map {
   width: 100vw;
   height: 100vh;
-  position: relative;
+  position: absolute;
+  top: 0;
 }
 
 .location-icon {
