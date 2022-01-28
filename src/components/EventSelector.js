@@ -6,28 +6,28 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import FormControl from "@mui/material/FormControl";
 import FormLabel from "@mui/material/FormLabel";
 
-const EventSelector = ({onCheck}) => {
+const EventSelector = ({ onCheck }) => {
   const [value, setValue] = useState(null);
 
   const handleChange = (event) => {
-    onCheck(event.target.value)
-    setValue(event.target.value)
+    onCheck(event.target.value);
+    setValue(event.target.value);
   };
 
   return (
-    <FormControl className="selector" sx={{overflow: 'hidden'}}>
+    <FormControl className="selector" sx={{ overflow: "hidden" }}>
       <FormLabel
         id="demo-row-radio-buttons-group-label"
         color="warning"
         className="form-title"
-        focused='true'
+        focused="true"
         sx={{
-          display: 'inline',
+          display: "inline",
           letterSpacing: 2,
-          fontWeight: 'bold',
+          fontWeight: "bold",
           mt: 0.5,
           pt: 1.2,
-          textAlign: 'center'
+          textAlign: "center",
         }}
       >
         Select Event
@@ -37,7 +37,8 @@ const EventSelector = ({onCheck}) => {
         aria-labelledby="demo-row-radio-buttons-group-label"
         name="row-radio-buttons-group"
         sx={{
-          display: 'inline',
+          display: "flex",
+          flexDirection: "column",
           pl: 2,
           pb: 1.2,
           mx: 0.5,
@@ -55,7 +56,11 @@ const EventSelector = ({onCheck}) => {
           control={<Radio />}
           label="Earthquakes"
         />
-        <FormControlLabel value="Volcanoes" control={<Radio />} label="Volcanoes" />
+        <FormControlLabel
+          value="Volcanoes"
+          control={<Radio />}
+          label="Volcanoes"
+        />
       </RadioGroup>
     </FormControl>
   );
